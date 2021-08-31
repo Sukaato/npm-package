@@ -1,0 +1,20 @@
+# source
+**/*.ts
+*.ts
+
+# definitions
+!**/*.d.ts
+!*.d.ts
+
+# configuration
+.eslintrc
+.prettierrc
+tsconfig.json
+jest.config.json
+package-lock.json
+
+#GitHub
+.github/
+
+#Test
+test/

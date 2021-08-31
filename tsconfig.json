@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "declaration": true,
+    "sourceMap": true,
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2018",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "~src": ["./src"]
+    }
+  },
+  "exclude": [
+    "./node_modules",
+    "./dist",
+    "./*.config.(t|j)s"
+  ]
+}

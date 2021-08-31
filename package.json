@@ -1,0 +1,45 @@
+{
+  "name": "<package-name>",
+  "version": "0.0.1",
+  "description": "Describe what your package does",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "start": "tsc -w",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<user>/<repo>.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "<user>",
+    "email": "<mail>"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<user>/<repo>/issues"
+  },
+  "homepage": "https://github.com/<user>/<repo>#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "jest": "^27.1.0",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
